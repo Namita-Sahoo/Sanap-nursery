@@ -410,6 +410,7 @@
   font-weight: 700;
   line-height: 95.238%;
 }
+
 @media (min-width: 768px) {
   .sec-title__title {
     font-size: 42px;
@@ -15271,6 +15272,7 @@ body.megamenu-popup-active .mobile-nav__content {
   .about-one__content__text {
     max-width: 508px;
     width: 100%;
+    text-align: justify;
   }
   .about-one__content__text.right-align  {
     text-align: right;
@@ -15353,6 +15355,7 @@ body.megamenu-popup-active .mobile-nav__content {
 
   .about-one__content__text {
     max-width: 100%;
+    text-align: justify;
   }
 }
 
@@ -15375,7 +15378,7 @@ body.megamenu-popup-active .mobile-nav__content {
   }
 
   .about-one__content h3 {
-    font-size: 22px;
+    font-size: 35px;
   }
 }
 
