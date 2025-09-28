@@ -15270,7 +15270,7 @@ body.megamenu-popup-active .mobile-nav__content {
 
 @media (min-width: 992px) {
   .about-one__content__text {
-    max-width: 508px;
+    max-width: 650px;
     width: 100%;
     text-align: justify;
   }
