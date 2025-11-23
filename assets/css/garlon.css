@@ -18403,3 +18403,172 @@ body.boxed-wrapper .page-wrapper {
 /*--------------------------------------------------------------
 # Client Carousel
 --------------------------------------------------------------*/
+/* Section background */
+.expertise-section {
+  background: #f6f4ee;
+  padding: 60px 0;
+}
+
+/* Heading */
+.expertise-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #233128;
+}
+
+.expertise-desc {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* Cards wrapper */
+.expertise-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  padding: 20px;
+}
+
+/* Card style */
+.expertise-card {
+  background: #fff;
+  padding: 35px;
+  border-radius: 28px;
+  position: relative;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* Yellow icon circle */
+.expertise-icon {
+  width: 100px;
+  height: 100px;
+  background: #e9dd63;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 0 auto 20px; 
+}
+
+.expertise-icon img {
+  width: 50px;
+  opacity: 0.9;
+}
+
+/* Title */
+.expertise-card h3 {
+  font-size: 22px;
+  color: #233128;
+  margin: 0 0 15px;
+  text-align: center; 
+}
+
+/* Divider line */
+.expertise-card hr {
+  border: none;
+  height: 1px;
+  background: rgba(0,0,0,0.1);
+  margin: 10px 0 20px;
+}
+
+/* Description */
+.expertise-card p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  text-align: center; /* CENTER TEXT */
+}
+
+/* Bottom curved bubble */
+.expertise-card::after {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+/* Arrow button */
+.expertise-arrow {
+  position: absolute;
+  bottom: -5px;
+  right: 33px;
+  background: #fff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  z-index: 10;
+}
+
+.expertise-arrow span {
+  font-size: 20px;
+  color: #333;
+}
+
+/* Hover effect – Arrow turns green */
+.expertise-card:hover .expertise-arrow {
+  background: #4caf50;
+}
+
+.expertise-card:hover .expertise-arrow span {
+  color: #fff;
+}
+
+/* ---------------- RESPONSIVE DESIGN ---------------- */
+
+/* For tablets – 2 cards per row */
+@media (max-width: 992px) {
+  .expertise-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .expertise-card {
+    padding: 30px;
+  }
+}
+
+/* For mobile – 1 card per row */
+@media (max-width: 600px) {
+  .expertise-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .expertise-card {
+    padding: 25px;
+  }
+
+  .expertise-icon {
+    width: 75px;
+    height: 75px;
+  }
+
+  .expertise-icon img {
+    width: 42px;
+  }
+
+  .expertise-title {
+    font-size: 26px;
+  }
+
+  .expertise-desc {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+}
