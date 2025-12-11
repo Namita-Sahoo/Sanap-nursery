@@ -478,125 +478,144 @@
 
             </div>
         </section>
+        
         <!-- Testimonial Section -->
         <section class="testimonial-section section-padding">
             <div class="container">
 
                 <!-- Section Title -->
                 <div class="text-center mb-4">
-                    <h2 class="section-title">Testimonial</h2>
-                    <p class="section-subtitle">
-                        What Our Customers Say About Us
-                    </p>
+                    <h2 class="section-title">Testimonials</h2>
+                    <p class="section-subtitle">What Our Customers Say About Us</p>
                 </div>
 
-                <!-- Slider Controls -->
+                <!-- Carousel Controls -->
                 <div class="d-flex justify-content-end gap-3 mb-3">
-                    <button class="slider-btn btn btn-outline-secondary"><i class="fa fa-chevron-left"
-                            aria-hidden="true"></i></button>
-                    <button class="slider-btn btn btn-outline-secondary"><i class="fa fa-chevron-right"
-                            aria-hidden="true"></i></button>
+                    <!-- Updated Button: PREV (No JS required) -->
+                    <button class="carousel-control-btn prev-btn" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="prev">
+                        <i class="fa fa-chevron-left"></i>
+                    </button>
+
+                    <!-- Updated Button: NEXT (No JS required) -->
+                    <button class="carousel-control-btn next-btn" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="next">
+                        <i class="fa fa-chevron-right"></i>
+                    </button>
                 </div>
 
-                <!-- Testimonials -->
-                <div class="row g-4">
+                <!-- Carousel -->
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
 
-                    <!-- Card 1 -->
-                    <div class="col-md-4">
-                        <div class="testimonial-card p-4 border rounded h-100 d-flex flex-column">
-                            <div class="rating mb-2 text-warning">★★★★★</div>
-                            <div class="quote-icon display-1 text-muted">”</div>
-                            <p class="testimonial-text mb-3">Great service and friendly staff!</p>
-                            <div class="user-info d-flex align-items-center mt-auto">
-                                <img src="https://i.pravatar.cc/60" class="rounded-circle me-3" alt="user">
-                                <div>
-                                    <h6 class="mb-0">Jessica Lee</h6>
-                                    <small class="text-muted">Team Lead</small>
+                        <!-- Item 1 -->
+                        <div class="carousel-item active">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="testimonial-card">
+                                        <div class="quote-circle">“ ”</div>
+                                        <div class="rating">★★★★★</div>
+                                        <p class="testimonial-text">Great service and friendly staff!</p>
+                                        <div class="user-info">
+                                            <img src="https://i.pravatar.cc/60" alt="user">
+                                            <div>
+                                                <h6>Jessica Lee</h6>
+                                                <small class="text-muted">Team Lead</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="testimonial-card">
+                                        <div class="quote-circle">“ ”</div>
+                                        <div class="rating">★★★★★</div>
+                                        <p class="testimonial-text">Excellent seedlings and timely advice.</p>
+                                        <div class="user-info">
+                                            <img src="https://i.pravatar.cc/61" alt="user">
+                                            <div>
+                                                <h6>Rahul Sharma</h6>
+                                                <small class="text-muted">Farmer</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="testimonial-card">
+                                        <div class="quote-circle">“ ”</div>
+                                        <div class="rating">★★★★★</div>
+                                        <p class="testimonial-text">Very knowledgeable team — helped increase yield.</p>
+                                        <div class="user-info">
+                                            <img src="https://i.pravatar.cc/62" alt="user">
+                                            <div>
+                                                <h6>Anita Desai</h6>
+                                                <small class="text-muted">Grower</small>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Card 2 -->
-                    <div class="col-md-4">
-                        <div class="testimonial-card p-4 border rounded h-100 d-flex flex-column">
-                            <div class="rating mb-2 text-warning">★★★★★</div>
-                            <div class="quote-icon display-1 text-muted">”</div>
-                            <p class="testimonial-text mb-3">Excellent seedlings and timely advice.</p>
-                            <div class="user-info d-flex align-items-center mt-auto">
-                                <img src="https://i.pravatar.cc/61" class="rounded-circle me-3" alt="user">
-                                <div>
-                                    <h6 class="mb-0">Rahul Sharma</h6>
-                                    <small class="text-muted">Farmer</small>
+                        <!-- Item 2 -->
+                        <div class="carousel-item">
+                            <div class="row g-4">
+
+                                <div class="col-md-4">
+                                    <div class="testimonial-card">
+                                        <div class="quote-circle">“ ”</div>
+                                        <div class="rating">★★★★★</div>
+                                        <p class="testimonial-text">Superb professional guidance!</p>
+                                        <div class="user-info">
+                                            <img src="https://i.pravatar.cc/63" alt="user">
+                                            <div>
+                                                <h6>Karan Patel</h6>
+                                                <small class="text-muted">Agronomist</small>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+
+                                <div class="col-md-4">
+                                    <div class="testimonial-card">
+                                        <div class="quote-circle">“ ”</div>
+                                        <div class="rating">★★★★★</div>
+                                        <p class="testimonial-text">High-quality seedlings at a great price.</p>
+                                        <div class="user-info">
+                                            <img src="https://i.pravatar.cc/64" alt="user">
+                                            <div>
+                                                <h6>Maria Gomez</h6>
+                                                <small class="text-muted">Horticulturist</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="testimonial-card">
+                                        <div class="quote-circle">“ ”</div>
+                                        <div class="rating">★★★★★</div>
+                                        <p class="testimonial-text">Impressive customer service and quality!</p>
+                                        <div class="user-info">
+                                            <img src="https://i.pravatar.cc/65" alt="user">
+                                            <div>
+                                                <h6>David Kim</h6>
+                                                <small class="text-muted">Greenhouse Owner</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Card 3 -->
-                    <div class="col-md-4">
-                        <div class="testimonial-card p-4 border rounded h-100 d-flex flex-column">
-                            <div class="rating mb-2 text-warning">★★★★★</div>
-                            <div class="quote-icon display-1 text-muted">”</div>
-                            <p class="testimonial-text mb-3">Very knowledgeable team — helped increase yield.</p>
-                            <div class="user-info d-flex align-items-center mt-auto">
-                                <img src="https://i.pravatar.cc/62" class="rounded-circle me-3" alt="user">
-                                <div>
-                                    <h6 class="mb-0">Anita Desai</h6>
-                                    <small class="text-muted">Grower</small>
-                                </div>
-                            </div>
-                        </div>
                     </div>
+                </div> <!-- End Carousel -->
 
-                    <div class="col-md-4">
-                        <div class="testimonial-card p-4 border rounded h-100 d-flex flex-column">
-                            <div class="rating mb-2 text-warning">★★★★★</div>
-                            <div class="quote-icon display-1 text-muted">”</div>
-                            <p class="testimonial-text mb-3">Very knowledgeable team — helped increase yield.</p>
-                            <div class="user-info d-flex align-items-center mt-auto">
-                                <img src="https://i.pravatar.cc/62" class="rounded-circle me-3" alt="user">
-                                <div>
-                                    <h6 class="mb-0">Anita Desai</h6>
-                                    <small class="text-muted">Grower</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="testimonial-card p-4 border rounded h-100 d-flex flex-column">
-                            <div class="rating mb-2 text-warning">★★★★★</div>
-                            <div class="quote-icon display-1 text-muted">”</div>
-                            <p class="testimonial-text mb-3">Very knowledgeable team — helped increase yield.</p>
-                            <div class="user-info d-flex align-items-center mt-auto">
-                                <img src="https://i.pravatar.cc/62" class="rounded-circle me-3" alt="user">
-                                <div>
-                                    <h6 class="mb-0">Anita Desai</h6>
-                                    <small class="text-muted">Grower</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="testimonial-card p-4 border rounded h-100 d-flex flex-column">
-                            <div class="rating mb-2 text-warning">★★★★★</div>
-                            <div class="quote-icon display-1 text-muted">”</div>
-                            <p class="testimonial-text mb-3">Very knowledgeable team — helped increase yield.</p>
-                            <div class="user-info d-flex align-items-center mt-auto">
-                                <img src="https://i.pravatar.cc/62" class="rounded-circle me-3" alt="user">
-                                <div>
-                                    <h6 class="mb-0">Anita Desai</h6>
-                                    <small class="text-muted">Grower</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </section>
+
 
 
         <footer class="main-footer">s
